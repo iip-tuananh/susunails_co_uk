@@ -34,7 +34,7 @@
     </style>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script>
-      window.__ENV__ = window.__ENV || {}; __ENV__.link ='http://127.0.0.1:8003/';
+      window.__ENV__ = window.__ENV || {}; __ENV__.link ='https://susunails.co.uk/';
       window.Laravel = {!!
           json_encode([
               'csrf_token' => csrf_token(),

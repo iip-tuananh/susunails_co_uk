@@ -108,15 +108,28 @@
     <div class="container">
         <div class="row gx-0">
         <div class="col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.2s">
+            <form action="{{route('postcontact')}}" method="post">
+                @csrf
             <div class="form-style2">
                 <h2 class="form-title">Book Appointment</h2>
                 <p class="form-label">Today For Free</p>
-                <div class="form-group"><input type="text" placeholder="Your Name"></div>
-                <div class="form-group"><input type="email" placeholder="Email Address"></div>
-                <div class="form-group"><input type="date"></div>
-                <div class="form-group"><input type="time"></div>
+                <div class="form-group"><input type="text" name="name" placeholder="Your Name"></div>
+                <div class="form-group"><input type="number" name="phone" placeholder="Your Phone"></div>
+                <div class="form-group"><input type="email" name="email" placeholder="Email Address"></div>
+                <div class="form-group"><input type="date" name="date"></div>
+                <div class="form-group"><input type="time" name="time"></div>
+                <div class="form-group">
+                <select name="subject" id="subject">
+                    <option value="" selected="selected" disabled="disabled" hidden>Subject*</option>
+                    @foreach ($services as $service)
+                    <option value="{{$service->name}}">{{$service->name}}</option>
+                    @endforeach
+                </select>
+                </div>
+                {{-- <div class="form-group"><textarea name="message" id="message" placeholder="Message"></textarea></div> --}}
                 <div class="form-group"><button class="vs-btn" type="submit">Make Appointment</button></div>
             </div>
+            </form>
         </div>
         <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
             <div class="testi-style1" data-bg-src="assets/img/bg/testi-bg-1-1.png">

@@ -26,13 +26,13 @@ List service
 </div>
 <section class="space">
     <div class="service-inner1">
-    <div class="shape-mockup jump d-none d-xxl-block" data-top="-10%" data-right="0"><img loading="lazy" src="{{asset('frontend/images/hero-leaf-5.png')}}" alt="shape"></div>
+    <div class="shape-mockup jump d-none d-xxl-block" data-top="-10%" data-right="0"><img loading="lazy" src="{{asset('frontend/images/hero-leaf-5.png')}}" srcset="{{asset('frontend/images/hero-leaf-5.png')}} 1x" alt="shape"></div>
     <div class="container-xl">
         <div class="row justify-content-between align-items-center">
             <div class="col-md-6 col-lg-5 col-xxl-auto">
                 @foreach ($left_list as $item)
                     <div class="service-style1 reverse">
-                    <div class="vs-icon"><img loading="lazy" src="{{$item->image}}" alt="icon" style="height: 99%;
+                    <div class="vs-icon"><img loading="lazy" src="{{$item->image}}" srcset="{{$item->image}} 1x" alt="icon" style="height: 99%;
                         width: 100%;
                         border-radius: 50%;"></div>
                     <div class="service-content">
@@ -42,11 +42,11 @@ List service
                     </div>
                 @endforeach
             </div>
-            <div class="col col-xxl-auto text-center d-none d-lg-block"><img loading="lazy" src="{{asset('frontend/images/sr-shape-1-1.png')}}" alt="shape" class="mt-n4"></div>
+            <div class="col col-xxl-auto text-center d-none d-lg-block"><img loading="lazy" src="{{asset('frontend/images/sr-shape-1-1.png')}}" srcset="{{asset('frontend/images/sr-shape-1-1.png')}} 1x" alt="shape" class="mt-n4"></div>
             <div class="col-md-6 col-lg-5 col-xxl-auto">
                 @foreach ($right_list as $item)
                     <div class="service-style1">
-                        <div class="vs-icon"><img loading="lazy" src="{{$item->image}}" alt="icon" style="height: 99%;
+                        <div class="vs-icon"><img loading="lazy" src="{{$item->image}}" srcset="{{$item->image}} 1x" alt="icon" style="height: 99%;
                             width: 100%;
                             border-radius: 50%;"></div>
                         <div class="service-content">
@@ -62,8 +62,8 @@ List service
 </section>
 <section class="space-top space-extra-bottom">
     <div class="parallax" data-parallax-image="{{asset('frontend/images/testi-bg-2-1.jpg')}}"></div>
-    <div class="shape-mockup jump-reverse d-none d-xxl-block" data-top="12%" data-right="6%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-1.png')}}" alt="shape"></div>
-    <div class="shape-mockup jump d-none d-xxl-block" data-top="35%" data-left="17.5%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-8.png')}}" alt="shape"></div>
+    <div class="shape-mockup jump-reverse d-none d-xxl-block" data-top="12%" data-right="6%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-1.png')}}" srcset="{{asset('frontend/images/leaf-1-1.png')}} 1x" alt="shape"></div>
+    <div class="shape-mockup jump d-none d-xxl-block" data-top="35%" data-left="17.5%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-8.png')}}" srcset="{{asset('frontend/images/leaf-1-8.png')}} 1x" alt="shape"></div>
     <div class="container">
     <div class="title-area text-center">
         <span class="sec-subtitle">nail & beauty salon</span>
@@ -71,7 +71,7 @@ List service
     </div>
     <div class="pb-1px"></div>
     <div class="testi-style2">
-        <span class="vs-icon"><img loading="lazy" src="{{asset('frontend/images/quote-1-1.png')}}" alt="icon"></span>
+        <span class="vs-icon"><img loading="lazy" src="{{asset('frontend/images/quote-1-1.png')}}" srcset="{{asset('frontend/images/quote-1-1.png')}} 1x" alt="icon"></span>
         <div class="vs-carousel" data-slide-show="1" data-fade="true" data-arrows="true" data-ml-arrows="true" data-xl-arrows="true" data-lg-arrows="true" data-prev-arrow="fal fa-long-arrow-left" data-next-arrow="fal fa-long-arrow-right">
             @foreach ($cus_reviews as $item)
                 <div>
@@ -85,161 +85,4 @@ List service
     </div>
     </div>
 </section>
-{{-- <section class="space-top space-extra-bottom">
-    <div class="parallax" data-parallax-image="assets/img/bg/price-bg-2-1.jpg"></div>
-    <div class="container">
-    <div class="row flex-row-reverse gx-55">
-        <div class="col-md-6 col-lg-6 col-xl-4 col-xxl align-self-end mb-40 mb-md-0 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="img-box3 style2">
-                <div class="shape-line">
-                <svg viewBox="0 0 442 357">
-                    <path class="shape-line" d="M220.6 3C339.98 3 437.1 100.12 437.1 219.5V351.99H440.1V219.5C440.1 160.87 417.27 105.75 375.81 64.29C334.35 22.83 279.23 0 220.6 0C161.97 0 106.85 22.83 65.39 64.29C28.67 101.01 6.57 148.46 2 199.56H5.02C15.12 89.5 107.94 3 220.6 3Z"/>
-                    <path class="shape-dot" d="M7 198.5C7 200.433 5.433 202 3.5 202C1.567 202 0 200.433 0 198.5C0 196.567 1.567 195 3.5 195C5.433 195 7 196.567 7 198.5Z"/>
-                    <path class="shape-dot" d="M442 353.5C442 355.433 440.433 357 438.5 357C436.567 357 435 355.433 435 353.5C435 351.567 436.567 350 438.5 350C440.433 350 442 351.567 442 353.5Z"/>
-                </svg>
-                </div>
-                <div class="text-shape">
-                <svg viewBox="0 0 408 579">
-                    <path id="textboxpath2" d="M0 204C0 91.3339 91.3339 0 204 0V0C316.666 0 408 91.3339 408 204V316.879V375C408 487.666 316.666 579 204 579V579C91.3339 579 0 487.666 0 375V204Z"></path>
-                    <text>
-                        <textPath href="#textboxpath2" startOffset="810">Onsectttur adipiscung</textPath>
-                    </text>
-                </svg>
-                </div>
-                <div class="img-product">
-                <a href="shop-details.html"><img loading="lazy" src="assets/img/about/price-2-1-1.png" alt="about"></a>
-                <p class="product-title"><a href="shop-details.html" class="text-inherit">face vitamin</a></p>
-                <p class="product-price">$12.00</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-8 col-xxl-auto wow fadeInUp" data-wow-delay="0.3s">
-            <div class="title-area text-center text-md-start">
-                <span class="text-white sec-subtitle">Experience Wellnez <span class="sec-subtext bg-theme">25 Years</span></span>
-                <h2 class="text-white sec-title">Perfect Package</h2>
-            </div>
-            <div class="price-inner2">
-                <div class="row vs-carousel" data-slide-show="2" data-lg-slide-show="1">
-                <div class="col-lg-6">
-                    <div class="package-style1">
-                        <div class="package-top">
-                            <div class="package-left">
-                            <p class="package-price">12<span class="currency">$</span></p>
-                            <p class="package-duration">Billed Monthly</p>
-                            </div>
-                            <h3 class="package-name">Basic Plan</h3>
-                        </div>
-                        <div class="package-shape"><img loading="lazy" src="assets/img/shape/price-shape-2.png" alt="shape"></div>
-                        <div class="package-list">
-                            <ul class="list-unstyled">
-                            <li><span class="text-title">Mobile-Optimized</span></li>
-                            <li>Free Custom Domain</li>
-                            <li>Best Hosting</li>
-                            <li>Max Makup</li>
-                            <li>Outstanding Support</li>
-                            <li>Happy Customers</li>
-                            </ul>
-                        </div>
-                        <div class="package-btn"><a href="contact.html" class="vs-btn style3">Book Now</a></div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="package-style1">
-                        <div class="package-top">
-                            <div class="package-left">
-                            <p class="package-price">29<span class="currency">$</span></p>
-                            <p class="package-duration">Billed Yearly</p>
-                            </div>
-                            <h3 class="package-name">Mega Plan</h3>
-                        </div>
-                        <div class="package-shape"><img loading="lazy" src="assets/img/shape/price-shape-2.png" alt="shape"></div>
-                        <div class="package-list">
-                            <ul class="list-unstyled">
-                            <li><span class="text-title">Mobile-Optimized</span></li>
-                            <li>Free Custom Domain</li>
-                            <li>Best Hosting</li>
-                            <li>Max Makup</li>
-                            <li>Outstanding Support</li>
-                            <li>Happy Customers</li>
-                            </ul>
-                        </div>
-                        <div class="package-btn"><a href="contact.html" class="vs-btn style3">Book Now</a></div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-<section class="overflow-hidden space-top space-extra-bottom">
-    <div class="shape-mockup jump-reverse-img d-none d-xxl-block" data-top="22%" data-left="-7%">
-    <div class="curb-shape1"></div>
-    </div>
-    <div class="shape-mockup jump-img d-none d-xxxl-block" data-top="17%" data-right="13%"><img loading="lazy" src="assets/img/shape/leaf-1-4.png" alt="shape"></div>
-    <div class="container">
-    <div class="row gx-55">
-        <div class="col-lg-5 col-xxl-auto align-self-center wow fadeInUp" data-wow-delay="0.2s">
-            <div class="px-xxl-4 mx-xxl-3 pb-md-4 pb-lg-0">
-                <div class="img-box3">
-                <div class="shape-line">
-                    <svg viewBox="0 0 442 357">
-                        <path class="shape-line" d="M220.6 3C339.98 3 437.1 100.12 437.1 219.5V351.99H440.1V219.5C440.1 160.87 417.27 105.75 375.81 64.29C334.35 22.83 279.23 0 220.6 0C161.97 0 106.85 22.83 65.39 64.29C28.67 101.01 6.57 148.46 2 199.56H5.02C15.12 89.5 107.94 3 220.6 3Z"/>
-                        <path class="shape-dot" d="M7 198.5C7 200.433 5.433 202 3.5 202C1.567 202 0 200.433 0 198.5C0 196.567 1.567 195 3.5 195C5.433 195 7 196.567 7 198.5Z"/>
-                        <path class="shape-dot" d="M442 353.5C442 355.433 440.433 357 438.5 357C436.567 357 435 355.433 435 353.5C435 351.567 436.567 350 438.5 350C440.433 350 442 351.567 442 353.5Z"/>
-                    </svg>
-                </div>
-                <div class="text-shape">
-                    <svg viewBox="0 0 408 579">
-                        <path id="textboxpath" d="M0 204C0 91.3339 91.3339 0 204 0V0C316.666 0 408 91.3339 408 204V316.879V375C408 487.666 316.666 579 204 579V579C91.3339 579 0 487.666 0 375V204Z"></path>
-                        <text>
-                            <textPath href="#textboxpath" startOffset="810">Onsectttur adipiscung</textPath>
-                        </text>
-                    </svg>
-                </div>
-                <div class="img-1"><img loading="lazy" src="assets/img/about/ab-3-1.jpg" alt="about"></div>
-                <div class="img-2 jump-img"><img loading="lazy" src="assets/img/shape/leaf-1-7.png" alt="about"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-7 col-xxl align-self-center wow fadeInUp" data-wow-delay="0.3s">
-            <span class="sec-subtitle">Experience Wellnez <span class="sec-subtext">25 Years</span></span>
-            <h2 class="sec-title2">DISCOVER A <span class="text-theme">NEW</span></h2>
-            <p class="quote-text">We think your skin should look and refshed matter your lifestyle Wellnez.</p>
-            <div class="row gx-25">
-                <div class="col-md-6">
-                <div class="feature-style1">
-                    <div class="vs-icon"><img loading="lazy" src="assets/img/icon/ab-f-2-1.png" alt="icon"></div>
-                    <h3 class="feature-title h5"><a class="text-inherit" href="service-details.html">Body Treatments</a></h3>
-                    <div class="arrow-shape"><i class="arrow"></i><i class="arrow"></i><i class="arrow"></i><i class="arrow"></i></div>
-                    <p class="feature-text">There many variations passages Ipsum availle majority have suffered in some.</p>
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="feature-style1">
-                    <div class="vs-icon"><img loading="lazy" src="assets/img/icon/ab-f-2-2.png" alt="icon"></div>
-                    <h3 class="feature-title h5"><a class="text-inherit" href="service-details.html">Stone Massage</a></h3>
-                    <div class="arrow-shape"><i class="arrow"></i><i class="arrow"></i><i class="arrow"></i><i class="arrow"></i></div>
-                    <p class="feature-text">There many variations passages Ipsum availle majority have suffered in some.</p>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-<div class="space" data-bg-src="assets/img/bg/cta-bg-2-1.png">
-    <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-auto wow fadeInUp" data-wow-delay="0.2s">
-            <div class="img-box4" data-overlay="theme" data-opacity="4">
-                <div class="img-1"><img loading="lazy" src="assets/img/about/cta-video-2-1.jpg" alt="thumbnail" class="w-100"></div>
-                <div class="img-2 jump"><img loading="lazy" src="assets/img/shape/shape-dotted.png" alt="shape"></div>
-                <div class="img-3 jump"><img loading="lazy" src="assets/img/shape/shape-dotted.png" alt="shape"></div>
-                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="watch-btn style2 popup-video"><span class="play-btn"><i class="fas fa-play"></i></span> <span class="btn-text">Watch Our Story</span></a>
-            </div>
-        </div>
-    </div>
-    </div>
-</div> --}}
 @endsection

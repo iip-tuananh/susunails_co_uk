@@ -164,7 +164,7 @@
             @foreach ($prizes as $item)
             <div class="col-md-6 col-xxl-3 filter-item">
                 <div class="gallery-style1">
-                    <div class="gallery-img"><img loading="lazy" src="{{$item->image}}" srcset="{{$item->image}} 1x" alt="Gallery Image" class="w-100"></div>
+                    <div class="gallery-img"><img src="{{$item->image}}" srcset="{{$item->image}} 1x" alt="Gallery Image" class="w-100" loading="lazy"></div>
                     <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
                     <div class="gallery-content">
                         <a href="{{$item->image}}" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>

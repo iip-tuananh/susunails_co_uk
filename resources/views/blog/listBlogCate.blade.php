@@ -30,7 +30,7 @@
         <div class="col-lg-8 col-xxl-9">
             @foreach ($blogs as $blog)
                 <div class="vs-blog blog-single has-post-thumbnail">
-                    <div class="blog-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" alt="Blog Image"></a></div>
+                    <div class="blog-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" srcset="{{$blog->image}} 1x" alt="Blog Image"></a></div>
                     <div class="blog-content">
                     <div class="blog-category"><a href="{{route('listCateBlog', $blog->category)}}">{{$title_page}}</a></div>
                     <h2 class="blog-title"><a href="{{route('detailBlog', $blog->slug)}}">{{languageName($blog->title)}}</a></h2>
@@ -67,7 +67,7 @@
                     <div class="recent-post-wrap">
                         @foreach ($latest_blogs as $blog)
                             <div class="recent-post">
-                                <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" loading="lazy" src="{{$blog->image}}" alt="{{languageName($blog->title)}}"></a></div>
+                                <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" loading="lazy" src="{{$blog->image}}" srcset="{{$blog->image}} 1x" alt="{{languageName($blog->title)}}"></a></div>
                                 <div class="media-body">
                                     <h4 class="post-title"><a class="text-inherit" href="{{route('detailBlog', $blog->slug)}}">{{languageName($blog->title)}}</a></h4>
                                     <div class="recent-post-meta"><a href="blog.html"><i class="fas fa-calendar-alt"></i>{{date("F j, Y", strtotime($blog->created_at))}}</a></div>

@@ -47,7 +47,7 @@
                     <div class="recent-post-wrap">
                         @foreach ($latest_blogs as $blog)
                             <div class="recent-post">
-                                <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" alt="{{languageName($blog->title)}}"></a></div>
+                                <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" srcset="{{$blog->image}} 1x" alt="{{languageName($blog->title)}}"></a></div>
                                 <div class="media-body">
                                     <h4 class="post-title"><a class="text-inherit" href="{{route('detailBlog', $blog->slug)}}">{{languageName($blog->title)}}</a></h4>
                                     <div class="recent-post-meta"><a href="blog.html"><i class="fas fa-calendar-alt"></i>{{date("F j, Y", strtotime($blog->created_at))}}</a></div>

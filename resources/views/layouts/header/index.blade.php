@@ -1,7 +1,7 @@
 <div class="vs-menu-wrapper">
     <div class="vs-menu-area text-center">
         <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
-        <div class="mobile-logo"><a href="{{route('home')}}"><img loading="lazy" src="{{$setting->logo}}" alt="{{$setting->company}}"></a></div>
+        <div class="mobile-logo"><a href="{{route('home')}}"><img loading="lazy" src="{{$setting->logo}}" srcset="{{$setting->logo}} 1x" alt="{{$setting->company}}"></a></div>
         <div class="vs-mobile-menu">
         <ul>
             <li>
@@ -34,7 +34,7 @@
     <div class="sidemenu-content">
         <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
         <div class="widget">
-        <div class="footer-logo"><img loading="lazy" src="{{$setting->logo}}" alt="logo"></div>
+        <div class="footer-logo"><img loading="lazy" src="{{$setting->logo}}" srcset="{{$setting->logo}} 1x" alt="logo"></div>
         <div class="info-media1">
             <div class="media-icon"><i class="fal fa-map-marker-alt"></i></div>
             <span class="media-label">{{$setting->address1}}</span>
@@ -53,7 +53,7 @@
         <div class="recent-post-wrap">
             @foreach ($latest_blogs as $blog)
                 <div class="recent-post">
-                    <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" alt="{{languageName($blog->title)}}"></a></div>
+                    <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" srcset="{{$blog->image}} 1x" alt="{{languageName($blog->title)}}"></a></div>
                     <div class="media-body">
                         <h4 class="post-title"><a class="text-inherit" href="{{route('detailBlog', $blog->slug)}}">{{languageName($blog->title)}}</a></h4>
                         <div class="recent-post-meta"><a href="blog.html"><i class="fas fa-calendar-alt"></i>{{date("F j, Y", strtotime($blog->created_at))}}</a></div>
@@ -100,7 +100,7 @@
                 <div class="col">
                     <div class="header-logo">
                         <a href="{{route('home')}}">
-                            <img loading="lazy" src="{{$setting->logo}}" alt="logo" style="width: 65%;">
+                            <img loading="lazy" src="{{$setting->logo}}" srcset="{{$setting->logo}} 1x" alt="logo" style="width: 65%;">
                         </a>
                     </div>
                 </div>

@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="col-md-5 col-lg-4">
-                <div class="vs-logo"><a href="{{route('home')}}"><img loading="lazy" src="{{$setting->logo}}" alt="logo"></a></div>
+                <div class="vs-logo"><a href="{{route('home')}}"><img loading="lazy" src="{{$setting->logo}}" srcset="{{$setting->logo}} 1x" alt="logo"></a></div>
             </div>
             <div class="col-md-7 col-lg-4">
                 <form action="#" class="form-style1">
@@ -86,7 +86,7 @@
                 <div class="recent-post-wrap">
                     @foreach ($footer_blogs as $blog)
                     <div class="recent-post">
-                        <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" alt="{{languageName($blog->title)}}"></a></div>
+                        <div class="media-img"><a href="{{route('detailBlog', $blog->slug)}}"><img loading="lazy" src="{{$blog->image}}" srcset="{{$blog->image}} 1x" alt="{{languageName($blog->title)}}"></a></div>
                         <div class="media-body">
                             <h4 class="post-title"><a class="text-inherit" href="{{route('detailBlog', $blog->slug)}}">{{languageName($blog->title)}}</a></h4>
                             <div class="recent-post-meta"><a href="blog.html"><i class="fas fa-calendar-alt"></i>{{date("F j, Y", strtotime($blog->created_at))}}</a></div>
@@ -105,7 +105,7 @@
             <div class="col-md-auto text-center">
                 <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2023 <a href="{{route('home')}}">{{$setting->company}}</a>. All Rights Reserved !</p>
             </div>
-            <div class="col-auto d-none d-md-block"><img loading="lazy" src="{{asset('frontend/images/cards.png')}}" alt="cards"></div>
+            <div class="col-auto d-none d-md-block"><img loading="lazy" src="{{asset('frontend/images/cards.png')}}" srcset="{{asset('frontend/images/cards.png')}} 1x" alt="cards"></div>
         </div>
     </div>
     </div>

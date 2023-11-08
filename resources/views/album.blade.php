@@ -32,7 +32,7 @@ Our Gallery
             @foreach ($prizes as $item)
             <div class="col-md-6 col-xxl-3 filter-item">
                 <div class="gallery-style1">
-                    <div class="gallery-img"><img loading="lazy" src="{{$item->image}}" alt="Gallery Image" class="w-100"></div>
+                    <div class="gallery-img"><img loading="lazy" src="{{$item->image}}" srcset="{{$item->image}} 1x" alt="Gallery Image" class="w-100"></div>
                     <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
                     <div class="gallery-content">
                         <a href="{{$item->image}}" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
@@ -46,8 +46,8 @@ Our Gallery
 </section>
 <section class="space-top space-extra-bottom">
     <div class="parallax" data-parallax-image="{{asset('frontend/images/testi-bg-2-1.jpg')}}"></div>
-    <div class="shape-mockup jump-reverse d-none d-xxl-block" data-top="12%" data-right="6%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-1.png')}}" alt="shape"></div>
-    <div class="shape-mockup jump d-none d-xxl-block" data-top="35%" data-left="17.5%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-8.png')}}" alt="shape"></div>
+    <div class="shape-mockup jump-reverse d-none d-xxl-block" data-top="12%" data-right="6%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-1.png')}}" srcset="{{asset('frontend/images/leaf-1-1.png')}} 1x" alt="shape"></div>
+    <div class="shape-mockup jump d-none d-xxl-block" data-top="35%" data-left="17.5%"><img loading="lazy" src="{{asset('frontend/images/leaf-1-8.png')}}" srcset="{{asset('frontend/images/leaf-1-8.png')}} 1x" alt="shape"></div>
     <div class="container">
     <div class="title-area text-center">
         <span class="sec-subtitle">nail & beauty salon</span>
@@ -55,7 +55,7 @@ Our Gallery
     </div>
     <div class="pb-1px"></div>
     <div class="testi-style2">
-        <span class="vs-icon"><img loading="lazy" src="{{asset('frontend/images/quote-1-1.png')}}" alt="icon"></span>
+        <span class="vs-icon"><img loading="lazy" src="{{asset('frontend/images/quote-1-1.png')}}" srcset="{{asset('frontend/images/quote-1-1.png')}} 1x" alt="icon"></span>
         <div class="vs-carousel" data-slide-show="1" data-fade="true" data-arrows="true" data-ml-arrows="true" data-xl-arrows="true" data-lg-arrows="true" data-prev-arrow="fal fa-long-arrow-left" data-next-arrow="fal fa-long-arrow-right">
             @foreach ($cus_reviews as $item)
                 <div>

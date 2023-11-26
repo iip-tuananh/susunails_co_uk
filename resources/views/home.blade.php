@@ -119,7 +119,7 @@
                 <div class="form-group"><input type="date" name="date"></div>
                 <div class="form-group"><input type="time" name="time"></div>
                 <div class="form-group">
-                <select name="subject" id="subject">
+                <select name="subject" id="subject" class="form-group">
                     <option value="" selected="selected" disabled="disabled" hidden>Subject*</option>
                     @foreach ($services as $service)
                     <option value="{{$service->name}}">{{$service->name}}</option>
@@ -177,7 +177,7 @@
     </div>
 </section>
 <section class="space-top space-extra-bottom">
-    <div class="container">
+    {{-- <div class="container">
         <div class="title-area text-center wow fadeInUp" data-wow-delay="0.2s">
         <span class="sec-subtitle">our blog</span>
         <h2 class="sec-title">Latest News Posts</h2>
@@ -196,6 +196,6 @@
             </div>
             @endforeach
         </div>
-    </div>
+    </div> --}}
 </section>
 @endsection

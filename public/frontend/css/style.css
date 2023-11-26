@@ -8181,7 +8181,7 @@ blockquote.vs-quote cite:before {
     margin-bottom: 0
 }
 
-.form-style2 input {
+.form-style2 input, .form-style2 select {
     background-color: #fde6d8;
     border: none;
     color: #6f6c6c;

@@ -17,14 +17,14 @@
                     @endforeach
                 </ul>
             </li>
-            <li class="menu-item-has-children">
+            {{-- <li class="menu-item-has-children">
                 <a href="javascript:void(0);">Blog</a>
                 <ul class="sub-menu">
                     @foreach ($blogCate as $cate)
                     <li><a href="{{route('listCateBlog', $cate->slug)}}">{{languageName($cate->name)}}</a></li>
                     @endforeach
                 </ul>
-            </li>
+            </li> --}}
             <li><a href="{{route('contactUs')}}">Contact Us</a></li>
         </ul>
         </div>
@@ -48,7 +48,7 @@
             <span class="media-label"><a class="text-inherit" href="mailto:{{$setting->email}}">{{$setting->email}}</a></span>
         </div>
         </div>
-        <div class="widget">
+        {{-- <div class="widget">
         <h3 class="widget_title">Latest post</h3>
         <div class="recent-post-wrap">
             @foreach ($latest_blogs as $blog)
@@ -61,7 +61,7 @@
                 </div>
             @endforeach
         </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 {{-- <div class="popup-search-box d-none d-lg-block">
@@ -122,14 +122,14 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li class="menu-item-has-children">
+                        {{-- <li class="menu-item-has-children">
                             <a href="javascript:void(0);">Blog</a>
                             <ul class="sub-menu">
                                 @foreach ($blogCate as $cate)
                                 <li><a href="{{route('listCateBlog', $cate->slug)}}">{{languageName($cate->name)}}</a></li>
                                 @endforeach
                             </ul>
-                        </li>
+                        </li> --}}
 
                         <li><a href="{{route('contactUs')}}">Contact Us</a></li>
                     </ul>

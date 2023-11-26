@@ -59,20 +59,20 @@
                 <h3 class="widget_title">Important Links</h3>
                 <div class="menu-all-pages-container footer-menu">
                     <ul class="menu">
-                        <li><a href="{{route('serviceList')}}">Serivces</a></li>
+                        <li><a href="{{route('serviceList')}}">SERVICES</a></li>
                         <li><a href="{{route('aboutUs')}}">ABOUT US</a></li>
-                        <li><a href="price-plan.html">Price Plan</a></li>
+                        <li><a href="{{route('listPrize')}}">Gallery</a></li>
                         <li><a href="{{route('contactUs')}}">CONTACT</a></li>
-                        <li><a href="blog.html">Our Blog</a></li>
+                        {{-- <li><a href="blog.html">Our Blog</a></li> --}}
                     </ul>
                 </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-3 col-lg-3">
+            <div class="col-md-6 col-xl-6 col-lg-6">
                 <div class="widget widget_nav_menu footer-widget">
                 <h3 class="widget_title">CATEGORIES</h3>
                 <div class="menu-all-pages-container footer-menu">
-                    <ul class="menu">
+                    <ul class="menu" style="column-count: 2; column-gap: 20px;">
                         @foreach ($services as $service)
                         <li><a href="{{route('serviceDetail', $service->slug)}}">{{$service->name}}</a></li>
                         @endforeach
@@ -80,7 +80,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-3 col-lg-3">
+            {{-- <div class="col-md-6 col-xl-3 col-lg-3">
                 <div class="widget footer-widget">
                 <h3 class="widget_title">Recent Post</h3>
                 <div class="recent-post-wrap">
@@ -95,7 +95,7 @@
                     @endforeach
                 </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     </div>

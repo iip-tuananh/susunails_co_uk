@@ -48,7 +48,7 @@
         <div class="row justify-content-between">
             <div class="col-md-6 col-xl-3 col-lg-3">
                 <div class="widget footer-widget">
-                <h3 class="widget_title">About Wellnez</h3>
+                <h3 class="widget_title">About Us</h3>
                 <p class="footer-info"><i class="fal fa-map-marker-alt text-theme me-2"></i> {{$setting->address1}}<br><a href="tel:{{str_replace('&', ' &amp; ', $setting->phone1)}}" class="text-inherit"><i class="far fa-phone-alt text-theme me-2"></i>{{$setting->phone1}}</a><br><a class="text-inherit" href="mailto:{{$setting->email}}"><i class="fal fa-envelope text-theme me-2"></i>{{$setting->email}}</a></p>
                 <h4 class="fs-22 mb-2">Open Hours</h4>
                 <p class="footer-time">Monday to Saturday <span class="time">09:00AM - 06:30PM</span></p>

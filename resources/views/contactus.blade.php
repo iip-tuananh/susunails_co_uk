@@ -34,7 +34,7 @@ Contact With Us
                 <span class="sec-subtitle">Experience</span>
                 <h2 class="sec-title3 h1 text-uppercase mb-xxl-2 pb-xxl-1">Get in <span class="text-theme">Touch</span></h2>
                 <div class="col-xxl-10 pb-xl-3">
-                <p class="pe-xxl-4">We think your skin should look and refshed matter Nourish your outer inner beauty with our essential</p>
+                {{-- <p class="pe-xxl-4">We think your skin should look and refshed matter Nourish your outer inner beauty with our essential</p> --}}
                 </div>
             </div>
             <form action="{{route('postcontact')}}" method="POST" class="ajax-contact form-style6">
